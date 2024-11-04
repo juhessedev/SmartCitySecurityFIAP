@@ -120,3 +120,34 @@ namespace Simple_Login_FORM
         private System.Windows.Forms.Label label2;
     }
 }
+
+
+public partial class LoginForm : Form
+{
+    public string LastMessage { get; private set; }
+
+    private void ShowMessage(string message)
+    {
+        LastMessage = message;
+        MessageBox.Show(message);
+    }
+
+    private void LoginButton_Click(object sender, EventArgs e)
+    {
+        if (string.IsNullOrEmpty(UsernameBox.Text))
+        {
+            ShowMessage("O campo nome de usuário é obrigatório.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(PasswordBox.Text))
+        {
+            ShowMessage("O campo senha é obrigatório.");
+            return;
+        }
+
+        // Simulação de sucesso para fins de teste
+        ShowMessage("Login realizado com sucesso!");
+    }
+}
+
