@@ -9,7 +9,7 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_ROOT_PASSWORD: Joana@2016
       MYSQL_DATABASE: smart_city_security
     ports:
       - "3306:3306"
