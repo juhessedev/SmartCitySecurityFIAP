@@ -8,6 +8,7 @@ Projeto Aplicando Técnicas de DevOps - Capítulo 6
 3. A API estará acessível em `http://localhost:8080/api/incident` e `http://localhost:8080/api/policepatrol`.
 
 ## Funcionalidades
+- Login
 - Registro e gerenciamento de incidentes.
 - Designação de patrulhas de segurança pública.
 
